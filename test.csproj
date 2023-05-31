@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+    <PackageReference Include="NSubstitute" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="NSubstitute" />
+    <None Remove="Moq" />
+    <None Remove="src\" />
+    <None Remove="src\strategy\" />
+    <None Remove="src\strategy\config\" />
+    <None Remove="src\strategy\application\" />
+    <None Remove="src\strategy\adapter\" />
+    <None Remove="src\strategy\application\core\" />
+    <None Remove="src\strategy\application\core\domain\" />
+    <None Remove="src\strategy\application\core\domain\frete\" />
+    <None Remove="src\strategy\application\core\domain\pedido\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\strategy\" />
+    <Folder Include="src\strategy\config\" />
+    <Folder Include="src\strategy\application\" />
+    <Folder Include="src\strategy\adapter\" />
+    <Folder Include="src\strategy\application\core\" />
+    <Folder Include="src\strategy\application\core\domain\" />
+    <Folder Include="src\strategy\application\core\domain\frete\" />
+    <Folder Include="src\strategy\application\core\domain\pedido\" />
+  </ItemGroup>
+</Project>
